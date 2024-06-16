@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="icon" href="./pic/icon.png" type="image/x-icon">
     <script src="./js/nav.js"></script>
-    <script src="./js/switch-images.js"></script>
-</head>
+    <!-- <script src="./js/switch-images.js"></script> -->
+    <script src="/js/map.js"></script>
+    <script src="/js/button.js"></script>
 <body>
     <div class="container">
         <!-- 页头部分 -->
@@ -41,9 +42,10 @@
         <!-- 主体部分 -->
         <main>
             <!-- 滚动选择的图片框 -->
-            <div class="boxtitle">
+            <!-- <div class="boxtitle" style="text-align:center">
                 菜系图鉴
-            </div>
+            </div> -->
+            <!--  
             <div class="redbox">
                 <div>
                     <div class="scrolling-images">
@@ -62,11 +64,21 @@
                     </div>
                 </div>
 
-                <!-- 右边文本框部分 -->
                 <div class="static-text">
                     <p> 菜系是在选料、切配、烹饪等技艺方面，经长期演变而自成体系，具有鲜明的地方风味特色，并为社会所公认的中国饮食的菜肴流派。
                         中国饮食文化的菜系，是指在一定区域内，由于气候、地形、历史、物产及饮食风俗的不同，经过漫长历史演变而形成的一整套自成体系的烹饪技艺和风味，并被全国各地所承认的地方菜肴。
                         早在商周时期中国的膳食文化已有雏形，以太公望最为代表，再到春秋战国的齐桓公时期，饮食文化中南北菜肴风味就表现出差异。到唐宋时，南食、北食各自形成体系。到了南宋时期，南甜北咸的格局形成。在清朝初年，川菜、鲁菜、淮扬菜、粤菜，成为当时最有影响的地方菜，被称作四大菜系。到了清朝末年，浙江菜、闽菜、湘菜、徽菜四大新地方菜系分化形成，共同构成汉民族饮食的“八大菜系”</p>
+                </div>
+            </div>
+            -->
+            
+            <div class="redbox" style="background-color:transparent; transform: scale(0.8);">
+                <div id="map">
+                    <h2>点击地图上的省份，了解更多美食</h2>
+                    <div class="map-container">
+                        <div id="tooltip" class="tooltip"></div>
+                        <object id="chinaMap" type="image/svg+xml" data="./cn.svg"></object>
+                    </div>
                 </div>
             </div>
 
@@ -93,6 +105,70 @@
                     <p>鲁菜，是中国传统四大菜系（也是八大菜系）中的自发型菜系（相对于淮扬、川、粤等影响型菜系而言），中国八大菜系之首，是北方菜的代表，也是中国家常菜的基础，是历史最悠久、技法最丰富、最见功力的菜系，黄河流域烹饪文化的代表。</p>
                 </div>
             </div>
+            <section id="sichuan" class="food-section">
+                <h2><img src="./pic/index/川菜.png" style="width: 35px;margin-right:20px;" alt="图标1"> 四川菜</h2>
+                <div class="gallery">
+                    <img src="./pic/index/mpdf.jpg" alt="四川菜">
+                    <img src="./pic/index/gbjd.jpeg" alt="四川菜">
+                    <img src="./pic/index/hgr.jpeg" alt="四川菜">
+                </div>
+                <p>四川菜以其麻辣著称，常见的菜品有麻婆豆腐、宫保鸡丁、回锅肉等。四川菜讲究“一菜一格，百菜百味”。</p>
+                <p class="intro-title">经典菜品介绍：</p>
+                <ul>
+                    <li><strong>麻婆豆腐</strong>：以麻、辣、鲜、香、嫩、酥、烫七味合一而闻名。</li>
+                    <li><strong>宫保鸡丁</strong>：以鸡丁、花生米为主要原料，味道咸鲜微辣。</li>
+                    <li><strong>回锅肉</strong>：先煮后炒，肉片鲜嫩，富有层次感。</li>
+                </ul>
+                <button id="bt-sc">点击了解更多</button>
+            </section>
+            <section id="guangdong" class="food-section">
+                <h2><img src="./pic/index/粤菜.png" style="width: 35px;margin-right:20px;" alt="图标1">广东菜</h2>
+                <div class="gallery">
+                    <img src="./pic/index/bqj.bmp" alt="广东菜">
+                    <img src="./pic/index/cs.jpeg" alt="广东菜">
+                    <img src="./pic/index/cf.jpeg" alt="广东菜">
+                </div>
+                <p>广东菜注重清淡和鲜美，著名菜品包括白切鸡、叉烧、肠粉等。广东菜讲究原汁原味，崇尚“清、鲜、嫩、滑、爽、脆”。</p>
+                <p class="intro-title">经典菜品介绍：</p>
+                <ul>
+                    <li><strong>白切鸡</strong>：以鸡肉鲜嫩、皮脆肉滑为特点，蘸姜葱酱油食用。</li>
+                    <li><strong>叉烧</strong>：烤制过程使肉质鲜嫩多汁，味道甜美。</li>
+                    <li><strong>肠粉</strong>：以米浆蒸制而成，口感滑嫩，配以各种馅料。</li>
+                </ul>
+                <button id="bt-gd">点击了解更多</button>
+            </section>
+            <section id="jiangsu" class="food-section">
+                <h2><img src="./pic/index/苏菜.png" style="width: 35px;margin-right:20px;" alt="图标1">江苏菜</h2>
+                <div class="gallery">
+                    <img src="./pic/index/yzcf.jpeg" alt="江苏菜">
+                    <img src="./pic/index/ysy.jpeg" alt="江苏菜">
+                    <img src="./pic/index/szt.jpeg" alt="江苏菜">
+                </div>
+                <p>江苏菜以其精致和淡雅著称，代表菜品有扬州炒饭、盐水鸭、狮子头等。江苏菜讲究刀工精细，味道清鲜平和。</p>
+                <p class="intro-title">经典菜品介绍：</p>
+                <ul>
+                    <li><strong>扬州炒饭</strong>：配料丰富，色彩鲜艳，口感多样。</li>
+                    <li><strong>盐水鸭</strong>：肉质鲜嫩，咸香可口，味道独特。</li>
+                    <li><strong>狮子头</strong>：以大块肉丸为特点，肉质鲜嫩，味道鲜美。</li>
+                </ul>
+                <button id="bt-js">点击了解更多</button>
+            </section>
+            <section id="shandong" class="food-section">
+                <h2><img src="./pic/index/鲁菜.png" style="width: 35px;margin-right:20px;" alt="图标1">山东菜</h2>
+                <div class="gallery">
+                    <img src="./pic/index/jzdc.jpg" alt="山东菜">
+                    <img src="./pic/index/tcly.jpeg" alt="山东菜">
+                    <img src="./pic/index/phs.jpeg" alt="山东菜">
+                </div>
+                <p>山东菜以其咸鲜味浓、注重汤汁见长，经典菜品有九转大肠、糖醋鲤鱼、扒海参等。山东菜注重火候，讲究味道浓郁。</p>
+                <p class="intro-title">经典菜品介绍：</p>
+                <ul>
+                    <li><strong>九转大肠</strong>：以肥肠为主要原料，味道甜、酸、辣、咸、香五味俱全。</li>
+                    <li><strong>糖醋鲤鱼</strong>：以鲜鱼为主要原料，外酥里嫩，酸甜适中。</li>
+                    <li><strong>扒海参</strong>：以海参为主要原料，味道鲜美，营养丰富。</li>
+                </ul>
+                <button id="bt-sd">点击了解更多</button>
+            </section>
         </main>
 
         <!-- 页脚部分 -->

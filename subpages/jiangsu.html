@@ -18,10 +18,10 @@
                 <nav>
                     <ul>
                         <li><a href="../index.html">首页</a></li>
-                        <li><a href="../subpages/sichuan.html">川菜</a></li>
-                        <li><a href="../subpages/guangdong.html">粤菜</a></li>
-                        <li><a href="../subpages/jiangsu.html">苏菜</a></li>
-                        <li><a href="../subpages/shandong.html">鲁菜</a></li>
+                        <li><a href="../subpages/sichuan.html">四川菜</a></li>
+                        <li><a href="../subpages/guangdong.html">广东菜</a></li>
+                        <li><a href="../subpages/jiangsu.html">江苏菜</a></li>
+                        <li><a href="../subpages/shandong.html">山东菜</a></li>
                     </ul>
                 </nav>
             </div>
@@ -60,13 +60,38 @@
                     <p>苏菜的代表菜包括松鼠桂鱼、东坡肉、盐水鸭等，每道菜都以其独特的风味和精湛的烹饪技巧闻名。</p>
                 </div>
             </section>
-            
+
             <section class="history-section">
                 <h2>苏菜的历史渊源</h2>
                 <p>苏菜起源于中国东部的江苏省，在漫长的历史发展过程中，苏菜融合了江南水乡的秀丽风光和丰富的物产，形成了独特的风味。</p>
                 <p>苏菜注重刀工与火候，菜肴多以炖、焖、煨、蒸等技法为主，讲究色、香、味、形的和谐美。</p>
             </section>
-            
+
+            <section class="video-section">
+                <h2>南京烤鸭</h2>
+                <!-- 这一部分调不好，算了。。 -->
+                <!-- <div class="video-overlay">
+                    <img src="../pic/jiangsu/duck.jpg" alt="视频封面图">
+                </div> -->
+                <video class="video-player" controls>
+                    <source src="../pic/jiangsu/duckduck.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>南京烤鸭是南京的传统名菜，属金陵菜，又称金陵烤鸭。南京人吃烤鸭，讲究皮酥肉嫩，肥而不腻，所以南京烤鸭皮脆肉嫩，没有其它地区的烤鸭肥腻。但是真正的行家，却十分挑剔店里奉送的那一兜红卤。店里鸭子烤得好不好，大抵看看卖相便可以揣测出来，但老卤对不对味，却非得口舌亲尝方知。</p>
+            </section>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var overlay = document.querySelector('.video-overlay');
+                    var video = document.querySelector('.video-player');
+                
+                    overlay.addEventListener('click', function() {
+                        this.style.display = 'none'; // 隐藏封面图
+                        video.play(); // 播放视频
+                    });
+                });
+            </script>
+
             <section class="gallery-section">
                 <h2>美食画廊</h2>
                 <div class="gallery">

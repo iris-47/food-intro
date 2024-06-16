@@ -3,7 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>粤菜</title>
+    <title>广东菜</title>
+    <style>
+        .dish-container {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px 0;
+
+            padding: 20px;
+        }
+
+        .dish {
+            flex: 0 0 auto;
+            width: 300px;
+            margin-right: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .dish img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .dish h2 {
+            color: #004d40;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .dish p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px;
+        }
+    </style>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/guangdong.css">
     <link rel="icon" href="../pic/icon.png" type="image/x-icon">
@@ -18,10 +55,10 @@
                 <nav>
                     <ul>
                         <li><a href="../index.html">首页</a></li>
-                        <li><a href="../subpages/sichuan.html">川菜</a></li>
-                        <li><a href="../subpages/guangdong.html">粤菜</a></li>
-                        <li><a href="../subpages/jiangsu.html">苏菜</a></li>
-                        <li><a href="../subpages/shandong.html">鲁菜</a></li>
+                        <li><a href="../subpages/sichuan.html">四川菜</a></li>
+                        <li><a href="../subpages/guangdong.html">广东菜</a></li>
+                        <li><a href="../subpages/jiangsu.html">江苏菜</a></li>
+                        <li><a href="../subpages/shandong.html">山东菜</a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,20 +80,19 @@
         <main>
             <div class="box" style="display: flex; justify-content: space-between; align-items: flex-start;">
                 <!-- Introduction Section -->
-                <section id="introduction" style="padding: 50px; background-color: #e0f7fa; text-align: center;">
-                    <h1 style="color: #00695c;">粤菜介绍</h1>
-                    <p style="max-width: 800px; margin: auto;">菜即广东菜，是中国四大菜系、八大菜系之一。粤菜包括广府菜（即广州府菜）、潮州菜、东江菜、粤西菜。主打粤菜的澳门、顺德和潮州三市是联合国评定的“世界美食之都” 。
-                        <br>广府菜是粤菜的代表，源自中原，传承了孔子所倡导的“食不厌精，脍不厌细”的中原饮食风格，做法比较复杂、精细，如煲仔饭、烤乳猪源自周代“八珍”美食；烧鹅源自宋朝名菜烤鸭；点心从中原传到广东后演变出广式点心。广府菜的范围包括珠江三角洲、香港、澳门和韶关等地。
-                        <br>潮汕菜分布在广东省粤东地区的潮州、汕头、揭阳、汕尾等地。受到闽菜影响较多，又受到广府菜、客家菜等的影响，汇闽粤两家之长，风味自成一格。其烹饪技艺列入国家级非物质文化遗产，潮州菜目前有三个分支：本土潮州菜、港澳潮州菜以及海外潮州菜 ，是“国际上最好的中华料理” 。
-                        <br>广东客家菜主要流行在梅州、惠州、河源、韶关、深圳等地，范围包括梅江、东江和北江流域 
-                        <br>粤西菜以广东省粤西地区的湛江、茂名、阳江等地为代表。高凉菜属于粤西菜式之一，发源于古代高凉郡，包括粤西地区茂名、阳江等地。</p>
+                <section id="introduction" style="padding: 50px; background-color: #e0f7fa; text-align: center; border-radius: 8px; margin-top: 10px;;">
+                    <h1 style="color: #00695c;">广东菜介绍</h1>
+                    <p style="max-width: 800px; margin: auto; text-indent: 2em; text-align: justify;">广东菜即粤菜，是中国四大菜系、八大菜系之一。粤菜包括广府菜（即广州府菜）、潮州菜、东江菜、粤西菜。主打粤菜的澳门、顺德和潮州三市是联合国评定的“世界美食之都” 。</p>
+                    <p style="max-width: 800px; margin: auto; text-indent: 2em; text-align: justify;">广府菜是粤菜的代表，源自中原，传承了孔子所倡导的“食不厌精，脍不厌细”的中原饮食风格，做法比较复杂、精细，如煲仔饭、烤乳猪源自周代“八珍”美食；烧鹅源自宋朝名菜烤鸭；点心从中原传到广东后演变出广式点心。广府菜的范围包括珠江三角洲、香港、澳门和韶关等地。</p>
+                    <p style="max-width: 800px; margin: auto; text-indent: 2em; text-align: justify;">潮汕菜分布在广东省粤东地区的潮州、汕头、揭阳、汕尾等地。受到闽菜影响较多，又受到广府菜、客家菜等的影响，汇闽粤两家之长，风味自成一格。其烹饪技艺列入国家级非物质文化遗产，潮州菜目前有三个分支：本土潮州菜、港澳潮州菜以及海外潮州菜 ，是“国际上最好的中华料理” 。</p>
+                    <p style="max-width: 800px; margin: auto; text-indent: 2em; text-align: justify;">粤菜的典雅与创新是中华饮食文化多样性和创造力的生动体现。 无论是在传统烹饪技艺的传承，还是在现代化创新的探索上，粤菜都展示了其独特的魅力和无限的可能性。 在未来，粤菜无疑将继续在传承与创新的道路上不断前行，为世界饮食文化贡献更多精彩。</p>
                     <img src="../pic/guangdong/cantonese-cuisine.jpeg" alt="粤菜" style="width: 300px; height: auto; margin-top: 20px;">
                 </section>
 
                 <!-- Features Section -->
-                <section id="features" style="padding: 50px; text-align: center;">
+                <section id="features" style="padding: 50px; text-align: center;" >
                     <h2 style="color: #004d40;">粤菜的特点</h2>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px; border-radius: 8px;">
                         <div style="flex: 1; min-width: 250px; max-width: 300px; padding: 20px; background-color: #b2dfdb; border-radius: 10px;">
                             <h3>清淡鲜美</h3>
                             <p>粤菜以其清淡鲜美的口味著称，强调食材的原汁原味。</p>
@@ -85,7 +121,7 @@
                 </section>
 
                 <!-- Featured Dishes Section -->
-                <section id="dishes" style="padding: 50px; background-color: #e0f7fa;">
+                <section id="dishes" style="padding: 50px; background-color: #e0f7fa; border-radius: 8px; margin-top: 10px;">
                     <h2 style="text-align: center; color: #00695c;">特色菜品</h2>
                     <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;">
                         <div style="flex: 1; min-width: 250px; max-width: 300px; text-align: center;">
@@ -106,6 +142,37 @@
                     </div>
                 </section>
             </div>
+            <div style="background-color: #b2dfdb; padding: 20px; margin-top: 20px;background-color: #e0f7fa; text-align: center; border-radius: 8px; margin-top: 10px;">
+                <h1 style="text-align: center;color: #00695c">广东五大名菜</h1>
+                <div class="dish-container">
+                    <div class="dish">
+                        <img src="../pic/guangdong/baiqieji.jpg" alt="白切鸡">
+                        <h2>白切鸡</h2>
+                        <p>白切鸡是广东最出名的一道名菜，是用新鲜整只鸡处理好洗净后，放入沸水里浸烫，煮沸后，每隔5分钟将鸡提起来一次，倒出鸡腹腔里的汤水，反复两到三次，目的是让鸡腹腔内外受热一致，最后提起来，放入冷水里浸泡，让鸡皮的颜色非常漂亮，再把鸡放入沸水里烫5-8分钟，把鸡提起来放入冷水里浸泡后，拿出来切成小块装盘，蘸上料汁水就可以吃了。白切鸡的色泽金黄靓丽非常好看，口感：肥嫩鲜美，鸡肉非常鲜嫩紧实微甜，非常好吃。</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../pic/guangdong/dongxingban.jpg" alt="清蒸东星斑">
+                        <h2>清蒸东星斑</h2>
+                        <p>清蒸东星斑是广东的特色名菜之一，选用鲜活的东星斑鱼处理好洗干净，加入葱姜水食盐腌制去腥，隔水蒸熟，加入蒸鱼豉油，麻油调味即可。清蒸东星斑的口感：非常鲜香，肉质鲜嫩可口，很好吃。</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../pic/guangdong/cafish.jpg" alt="阿一鲍鱼">
+                        <h2>阿一鲍鱼</h2>
+                        <p>阿一鲍鱼是广东最出名的名菜，阿一鲍鱼选用大鲍鱼作为原料，经过烹饪后，加入高汤淋入，就是一道色香味俱全的一道名菜。阿一鲍鱼非常香，嫩，鲜，让人吃了唇齿留香。</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../pic/guangdong/xiangbabang.jpg" alt="白灼象拔蚌">
+                        <h2>白灼象拔蚌</h2>
+                        <p>先熬好葱油备用。象拔蚌处理干净切薄片。 水开后放入象拔蚌，大火烫30秒，捞出控水。加入洋葱丝、香菜段、葱段、青红椒段和盐拌匀，淋上葱油和蒸鱼豉油拌匀即可。</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../pic/guangdong/pipixia.jpg" alt="椒盐濑尿虾">
+                        <h2>椒盐濑尿虾</h2>
+                        <p>椒盐濑尿虾是广东的特色菜。选用鲜活的濑尿虾，也叫爬爬虾，处理好洗净，加入椒盐制作而成的。椒盐濑尿虾的口感：鲜嫩可口，外酥里软，非常不错的一道特色菜。</p>
+                    </div>
+                </div>
+            </div>
+            
         </main>
 
         <!-- 页脚部分 -->

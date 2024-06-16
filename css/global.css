@@ -5,12 +5,23 @@
 }
 
 body {
+    background-image: url('../pic/index/background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
 .container {
+    animation: fadeIn 0.5s ease-out;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -96,6 +107,66 @@ header {
     margin-left: 10px;
     margin-top: 10px;
 }
+
+#map {
+    padding: 2em;
+    text-align: center;
+    /* transform: scale(0.8); */
+}
+
+#map h2 {
+    font-size: 2em;
+    color: #d32f2f;
+    /* margin-bottom: 1em; */
+}
+
+.tooltip {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: none;
+    pointer-events: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.infobox {
+    background-color:antiquewhite;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* 文本内容居中 */
+    display: flex;
+    flex-direction: column; /* 子元素垂直排列 */
+    justify-content: center; /* 子元素在主轴方向上居中 */
+    align-items: center; /* 子元素在交叉轴方向上居中 */
+  }
+  
+  .infobox h4 {
+    margin: 0 0 10px 0;
+    color: #990000;
+  }
+  
+  .infobox img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* 定义闪烁动画 */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* 应用闪烁动画到blinking-div */
+  .blinking-div {
+    color: red;
+    animation: blink 1.5s infinite;
+  }
 
 /* 红色背景框 */
 .redbox {
@@ -191,6 +262,96 @@ header {
     font-size: 14px;
     color: #555;
     line-height: 1.4;
+}
+
+.food-section {
+    margin-top: 10px;
+    background-color: #fff;
+    border: 2px solid #b22222; /* 深红色边框 */
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.food-section h2 {
+    font-size: 2em;
+    color: #d32f2f;
+}
+
+.food-section img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.food-section img:hover {
+    transform: scale(1.05);
+}
+
+.food-section p {
+    max-width: 800px;
+    margin: 0 auto 1em;
+    font-size: 1.1em;
+}
+
+.intro-title {
+    margin-bottom: 20px;
+    border: 2px solid #b22222; /* 深红色边框 */
+    padding: 10px;
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.food-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.food-section ul li {
+    background-color: #ffebee;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.food-section ul li strong {
+    color: #d32f2f;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.gallery img {
+    flex: 1;
+    max-width: calc(33.33% - 1em);
+}
+
+.food-section button {
+    background-color: var(--china-red); /* 使用之前定义的中国红主题颜色 */
+    color: #b22222; /* 文字颜色为白色，以确保对比度和可读性 */
+    border: none; /* 移除边框 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 5px; /* 轻微的圆角边框 */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* 过渡效果 */
+}
+  
+.food-section  button:hover {
+    background-color: #b22222; /* 鼠标悬停时的背景色，稍亮的红色 */
+    color: white;
+    transform: scale(1.05); /* 轻微放大 */
+}
+  
+.food-section  button:active {
+    transform: scale(0.95); /* 点击时轻微缩小，增加反馈感 */
 }
 
 footer {

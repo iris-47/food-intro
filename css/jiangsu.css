@@ -54,6 +54,38 @@ body {
     margin: 10px 0;
 }
 
+.video-section {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* 根据实际需要调整 */
+    margin: auto;
+    text-align: center;
+}
+.video-section h2{
+    color: #d32f2f;
+    margin: 10px 0;
+}
+.video-section p{
+    background-color: #ffebee;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    cursor: pointer; /* 显示可以点击 */
+    z-index: 2; /* 确保覆盖在视频上面 */
+}
+.video-player {
+    width: 80%;
+    height: auto; /* 保持视频的原始宽高比 */
+    z-index: 1;
+}
+
 .history-section {
     background-color: #ffcdd2;
     padding: 30px 20px;
