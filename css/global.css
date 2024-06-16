@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #990000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-left nav ul li {
+    margin-left: 20px;
+}
+
+.nav-left nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+.nav-left nav ul li a:hover {
+    background-color: #cc0000;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #990000;
+    /* color: #fff; */
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-right button img {
+    width: 25px;
+    height: 25px;
+}
+
+/* .nav-right button:hover {
+    background-color: #e60000;
+} */
+
+.popup-box {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#lulupig {
+    width: 340px;
+    height: 340px;
+}
+
+.boxtitle {
+    font-size: 25px;
+    font-weight: bold;
+    color: #990000;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* 红色背景框 */
+.redbox {
+    background-color: #ffe4e1; /* 淡红色 */
+    border: 2px solid #b22222; /* 深红色边框 */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* 图片滚动部分 */
+.scrolling-images {
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.scrolling-images img {
+    width: 500px;
+    margin-right: 10px;
+    display: none;
+    border-radius: 10px;
+}
+
+.scrolling-images img.active {
+    display: block;
+    /* opacity: 1; */
+}
+/* 图片切换指示点 */
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #b22222; /* 深红色 */
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ff6347; /* 番茄红 */
+}
+
+/* 文本框部分 */
+.static-text {
+    max-width: 50%;
+    padding: 20px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 信息框部分 */
+.info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-box {
+    background-color: #fff;
+    border: 2px solid #b22222; /* 深红色边框 */
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(25% - 20px); /* 四个一行，保持间距 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.info-box img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    color: #b22222; /* 深红色 */
+    margin: 10px 0;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: #990000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

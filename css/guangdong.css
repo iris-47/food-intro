@@ -1,0 +1,79 @@
+/* 介绍部分 */
+#introduction {
+    padding: 50px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+#introduction h1 {
+    color: #00695c;
+}
+
+#introduction p {
+    max-width: 800px;
+    margin: auto;
+}
+
+#introduction img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* 特点部分 */
+#features {
+    padding: 50px;
+    text-align: center;
+}
+
+#features h2 {
+    color: #004d40;
+}
+
+#features div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#features div > div {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #b2dfdb;
+    border-radius: 10px;
+}
+
+/* 特色菜品部分 */
+#dishes {
+    padding: 50px;
+    background-color: #e0f7fa;
+}
+
+#dishes h2 {
+    text-align: center;
+    color: #00695c;
+}
+
+#dishes div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#dishes div > div {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+#dishes img {
+    width: 100%;
+    height: auto;
+}

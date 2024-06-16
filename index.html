@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寻觅中华美食</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="icon" href="./pic/icon.png" type="image/x-icon">
+    <script src="./js/nav.js"></script>
+    <script src="./js/switch-images.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 页头部分 -->
+        <header>
+            <div class="nav-left">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="./subpages/sichuan.html">川菜</a></li>
+                        <li><a href="./subpages/guangdong.html">粤菜</a></li>
+                        <li><a href="./subpages/jiangsu.html">苏菜</a></li>
+                        <li><a href="./subpages/shandong.html">鲁菜</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <button id="language-button"><img src="./pic/language.png"></button>
+                <button id="alert-button"><img src="./pic/info.png"></button>
+                <div id="language-box" class="popup-box">没有那么高级的内容啦，我懒得做...</div>
+                <div id="alert-box" class="popup-box">
+                    <img src="./pic/lulupig.png" alt="什么，图片因为太大被删了，太可惜了" id="lulupig">
+                    <br>
+                    介绍一下，这是一只lulu pig，它会陪着你看美食。
+                    <br>
+                    但你不可以想着把它做成红烧肉...
+                </div>
+            </div>
+        </header>
+
+        <!-- 主体部分 -->
+        <main>
+            <!-- 滚动选择的图片框 -->
+            <div class="boxtitle">
+                菜系图鉴
+            </div>
+            <div class="redbox">
+                <div>
+                    <div class="scrolling-images">
+                        <img src="./pic/index/pic1.png" alt="图片无法显示">
+                        <img src="./pic/index/pic2.png" alt="图片无法显示">
+                        <img src="./pic/index/pic3.png" alt="图片无法显示">
+                        <img src="./pic/index/pic4.png" alt="图片无法显示">
+                        <img src="./pic/index/pic5.png" alt="图片无法显示">
+                    </div>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <!-- 右边文本框部分 -->
+                <div class="static-text">
+                    <p> 菜系是在选料、切配、烹饪等技艺方面，经长期演变而自成体系，具有鲜明的地方风味特色，并为社会所公认的中国饮食的菜肴流派。
+                        中国饮食文化的菜系，是指在一定区域内，由于气候、地形、历史、物产及饮食风俗的不同，经过漫长历史演变而形成的一整套自成体系的烹饪技艺和风味，并被全国各地所承认的地方菜肴。
+                        早在商周时期中国的膳食文化已有雏形，以太公望最为代表，再到春秋战国的齐桓公时期，饮食文化中南北菜肴风味就表现出差异。到唐宋时，南食、北食各自形成体系。到了南宋时期，南甜北咸的格局形成。在清朝初年，川菜、鲁菜、淮扬菜、粤菜，成为当时最有影响的地方菜，被称作四大菜系。到了清朝末年，浙江菜、闽菜、湘菜、徽菜四大新地方菜系分化形成，共同构成汉民族饮食的“八大菜系”</p>
+                </div>
+            </div>
+
+            <!-- 三个带标题和图标的文本框部分 -->
+            <div class="info-boxes">
+                <div class="info-box">
+                    <img src="./pic/index/川菜.png" alt="图标1">
+                    <h3>川菜</h3>
+                    <p>川菜，作为中国四大菜系之一，以其独特的麻辣味道和丰富的烹饪技巧闻名。 原料以四川地区境内的山珍、水产、蔬果为主；调辅料以川糖、花椒、辣椒及豆瓣、腐乳为主。川菜烹饪技法有煎、炒、油淋、酥炸等40种。味型以麻辣、鱼香、怪味为其突出特点。</p>
+                </div>
+                <div class="info-box">
+                    <img src="./pic/index/粤菜.png" alt="图标2">
+                    <h3>粤菜</h3>
+                    <p>粤菜即广东菜，是中国四大菜系、八大菜系之一。粤菜包括广府菜（即广州府菜）、潮州菜（又称潮汕菜）、东江菜（又称客家菜）、粤西菜。主打粤菜的澳门、顺德和潮州三市是联合国评定的“世界美食之都” 。</p>
+                </div>
+                <div class="info-box">
+                    <img src="./pic/index/苏菜.png" alt="图标3">
+                    <h3>苏菜</h3>
+                    <p>江苏菜，中国汉族八大菜系之一，简称苏菜。由于苏菜和浙菜相近，因此和浙菜统称江浙菜系。主要以金陵菜、淮扬菜、苏锡菜、徐海菜等地方菜组成。江苏菜起源于二千多年前，其中金陵菜起源于先秦时期，当时吴人善制炙鱼、蒸鱼和鱼片，一千多年前，鸭已为南京美食。南宋时，苏菜和浙菜同为“南食”的两大台柱</p>
+                </div>
+                <div class="info-box">
+                    <img src="./pic/index/鲁菜.png" alt="图标3">
+                    <h3>鲁菜</h3>
+                    <p>鲁菜，是中国传统四大菜系（也是八大菜系）中的自发型菜系（相对于淮扬、川、粤等影响型菜系而言），中国八大菜系之首，是北方菜的代表，也是中国家常菜的基础，是历史最悠久、技法最丰富、最见功力的菜系，黄河流域烹饪文化的代表。</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- 页脚部分 -->
+        <footer>
+            <p>版权所有 &copy; 第四组</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>川菜！</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sichaun.css">
+    <link rel="icon" href="../pic/icon.png" type="image/x-icon">
+    <script src="../js/nav.js"></script>
+    <script src="../js/switch-images.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 页头部分 -->
+        <header>
+            <div class="nav-left">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../subpages/sichuan.html">川菜</a></li>
+                        <li><a href="../subpages/guangdong.html">粤菜</a></li>
+                        <li><a href="../subpages/jiangsu.html">苏菜</a></li>
+                        <li><a href="../subpages/shandong.html">鲁菜</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <button id="language-button"><img src="../pic/language.png"></button>
+                <button id="alert-button"><img src="../pic/info.png"></button>
+                <div id="language-box" class="popup-box">没有那么高级的内容啦，我懒得做...</div>
+                <div id="alert-box" class="popup-box">
+                    <img src="../pic/lulupig.png" alt="什么，图片因为太大被删了，太可惜了" id="lulupig">
+                    <br>
+                    介绍一下，这是一只lulu pig，它会陪着你看美食。
+                    <br>
+                    但你不可以想着把它做成红烧肉，火锅，...
+                </div>
+            </div>
+        </header>
+
+        <!-- 主体部分 -->
+        <main>
+            <div class="boxtitle">
+                川菜
+            </div>
+            <div class="redbox">
+                <div  class="introduce-list">
+                    <div class="introduce">
+                        <h2>什么是川菜？</h2>
+                        <p>川菜，又称四川菜，是中国八大菜系之一，以其麻辣鲜香著称。川菜在烹饪中善于使用辣椒、花椒、豆瓣酱等调味品，形成了独特的口味。</p>
+                        <img src="../pic/sichuan/sichuan-cuisine.jpg" alt="川菜">
+                    </div>
+
+                    <!-- Features Section -->
+                    <div class="list">
+                        <h2>川菜的特点</h2>
+                        <ul>
+                            <li>
+                                <h3>麻辣鲜香</h3>
+                                <p>川菜以其麻辣鲜香的独特口味闻名，使用花椒、辣椒等调料。</p>
+                            </li>
+                            <li>
+                                <h3>多样化的烹饪方式</h3>
+                                <p>川菜包含炒、煎、蒸、炖等多种烹饪方式，每种方式都有其独特的风味。</p>
+                            </li>
+                            <li>
+                                <h3>独特的调味品</h3>
+                                <p>川菜调味品丰富，如豆瓣酱、花椒油、辣椒油等，使得菜品味道层次丰富。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Featured Dishes Section -->
+                <div class="feature">
+                    <h2>特色菜品</h2>
+                    <div class="feature-container">
+                        <div class="feature-body">
+                            <img src="../pic/sichuan/mapo-tofu.png" alt="麻婆豆腐">
+                            <h3>麻婆豆腐</h3>
+                            <p>经典的川菜菜品，以豆腐、牛肉末、豆瓣酱为主料。下饭神器。</p>
+                        </div>
+                        <div class="feature-body">
+                            <img src="../pic/sichuan/kung-pao-chicken.jpeg" alt="宫保鸡丁">
+                            <h3>宫保鸡丁</h3>
+                            <p>川菜中的名菜，口味酸甜辣，深受喜爱。但是总觉得吃不饱。</p>
+                        </div>
+                        <div class="feature-body">
+                            <img src="../pic/sichuan/fish-hot-pot.jpeg" alt="水煮鱼">
+                            <h3>水煮鱼</h3>
+                            <p>以鱼片为主料，搭配多种调味品和辣椒，口感鲜嫩。注意鱼刺，真的多。</p>
+                        </div>
+                        <div class="feature-body">
+                            <img src="../pic/sichuan/feipian.jpeg" alt="夫妻肺片">
+                            <h3>夫妻肺片</h3>
+                            <p>以牛头皮、牛心、牛舌、牛肚、牛肉为主料，进行卤制，而后切片。再配以辣椒油、花椒面等辅料制成红油浇在上面。我是吃不来肺片。。。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 三个带标题和图标的文本框部分 -->
+            <div class="boxtitle">
+                不是川菜
+            </div>
+            <div class="redbox">
+                <div class="feature">
+                    <div class="feature-container">
+                        <div class="feature-body" style="width: 400px;">
+                            <img src="../pic/sichuan/hotpot.png" style="width: 400px;" alt="火锅">
+                            <h3>火锅</h3>
+                            <p>火锅儿好次！</p>
+                        </div>
+                        
+                        <div class="feature-body"  style="width: 400px;">
+                            <img src="../pic/sichuan/bamboo.jpeg" alt="竹子">
+                            <h3>竹子</h3>
+                            <p>熊猫看了都说好</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 页脚部分 -->
+        <footer>
+            <p>版权所有 &copy; 第四组</p>
+        </footer>
+    </div>
+</body>
+</html>

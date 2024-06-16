@@ -1,0 +1,71 @@
+.boxtitle {
+    font-size: 24px;
+    color: #cc0000;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.redbox {
+    background-color: #fff5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #cc0000;
+}
+
+h3 {
+    color: #660000;
+}
+
+p {
+    color: #333;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.introduce-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduce, .list {
+    flex: 1;
+    margin: 10px;
+}
+
+.list li{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.feature-container {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-body {
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.feature-body img {
+    width: 200px;
+}
