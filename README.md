@@ -9,4 +9,4 @@
 首页的地图svg由于跨域问题无法在本地运行
 
 ## Try
-访问https://iris-47.github.io/food-intro/来查看本网站
+访问 https://iris-47.github.io/food-intro/ 来查看本网站
